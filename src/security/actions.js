@@ -1,0 +1,22 @@
+const ACTIONS = Object.freeze({
+  CHANNEL_DELETE: 'CHANNEL_DELETE',
+  ROLE_DELETE: 'ROLE_DELETE',
+  MEMBER_BAN: 'MEMBER_BAN',
+  MEMBER_KICK: 'MEMBER_KICK',
+  CHANNEL_CREATE: 'CHANNEL_CREATE',
+  ROLE_CREATE: 'ROLE_CREATE',
+});
+
+const ACTION_LABELS = Object.freeze({
+  [ACTIONS.CHANNEL_DELETE]: 'Channel Delete',
+  [ACTIONS.ROLE_DELETE]: 'Role Delete',
+  [ACTIONS.MEMBER_BAN]: 'Member Ban',
+  [ACTIONS.MEMBER_KICK]: 'Member Kick',
+  [ACTIONS.CHANNEL_CREATE]: 'Channel Create',
+  [ACTIONS.ROLE_CREATE]: 'Role Create',
+});
+
+module.exports = {
+  ACTIONS,
+  ACTION_LABELS,
+};
